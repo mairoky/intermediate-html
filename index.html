@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Intermediate HTML5, Here we learn all advanced HTML5 tag and element.">
+	<title>Intermediate HTML5</title>
+</head>
+<body>
+	<!-- Table -->
+	<h2>Table Example - 1</h2>
+	<table>
+		<colgroup>
+        <col span="2" style="background-color: red">
+        <col style="background-color: green">
+      </colgroup>
+		<tr>
+			<th>Name</th>
+			<th>Age</th>
+			<th>Class</th>
+		</tr>
+		<tr>
+			<td>Sumon</td>
+			<td>12</td>
+			<td>05</td>
+		</tr>
+		<tr>
+			<td>Akash</td>
+			<td>15</td>
+			<td>08</td>
+		</tr>
+	</table>
+	<hr>
+	<h2>Tabel Example - 2</h2>
+	<table>
+		<caption>Table Caption:</caption>
+		<!-- Table head -->
+		<thead>
+			<tr>
+				<td>Column Name 1</td>
+				<td>Column Name 2</td>
+			</tr>
+		</thead>
+		<!-- Table footr -->
+		<tfoot>
+			<tr>
+				<td>Footer</td>
+			</tr>
+		</tfoot>
+		<!-- Table body -->
+		<tbody>
+			<tr>
+				<td>content 1</td>
+				<td>content 2</td>
+			</tr>
+		</tbody>
+	</table>
+	<hr>
+	<h2><a href="table.html" target="_blank">More Table Example</a></h2>
+	<h2>Embedding Contents</h2>
+	<h3>Image</h3>
+	<img src="images/bike.jpg">
+	<h3>Audio</h3>
+	<audio controls="">
+		<source src="audio/pure_magic.mp3" type="audio/mpeg">
+		The browser does not support this audio format.
+	</audio>
+	<h3>Video</h3>
+	<video width="450" height="300" controls="">
+		<source src="video/bcs_quiz.mp4" type="video/mp4">
+		Having some issues with video!
+	</video>
+	<h2>Working with Forms</h2>
+	<h3>Simple Form with GET Action</h3>
+	<form method="get" action="result.html">
+		<label for="FirstName">First Name:</label>
+		<input type="text" name="FirstName" placeholder="First Name" id="FirstName">
+		<br><br>
+		<label for="LastName">Last Name:</label>
+		<input type="text" name="LastName" placeholder="Last Name" id="LastName">
+		<br><br>
+		<input type="submit">
+		<input type="reset">
+	</form>
+	<h3>Simple Form with POST Action</h3>
+	<form method="post" action="result.html">
+		<label for="FirstName">First Name:</label>
+		<input type="text" name="FirstName" placeholder="First Name" id="FirstName">
+		<br><br>
+		<label for="LastName">Last Name:</label>
+		<input type="text" name="LastName" placeholder="Last Name" id="LastName">
+		<br><br>
+		<input type="submit">
+		<input type="reset">
+	</form>
+	<h3>Basic Form Elements</h3>
+	<form>
+		<fieldset>
+			<legend>Input Box Elements</legend>
+			<label for="input_text">Text:</label>
+            <input id ="input_text" type="text" placeholder="Text">
+            <br><br>
+            <label for="input_email">Email:</label>
+            <input id ="input_email" type="email" placeholder="test@email.com">
+            <br><br>
+            <label for="input_password">Password:</label>
+            <input id ="input_password" type="password" placeholder="Password">            
+            <br><br>
+            <label for="input_number">Number:</label>
+            <input id ="input_number" type="number" placeholder="Number">            
+            <br><br>
+            <label for="input_phonenumber">Phone Number:</label>
+            <input id ="input_phonenumber" type="tel" placeholder="+88000000000">            
+            <br><br>
+            <label for="input_url">URL:</label>
+            <input id ="input_url" type="url" placeholder="https://example.com">            
+            <br><br>
+            <label for="input_search">Search:</label>
+            <input id ="input_search" type="search" placeholder="Search">            
+            </fieldset>
+		</fieldset>
+		<fieldset>
+			<legend>Select form Element</legend>
+			<label for="select">Select</label>
+			<select id="select">
+				<optgroup label="Option Group 1">
+					<option>Option 1</option>
+					<option>Option 2</option>
+					<option>Option 3</option>
+				</optgroup>
+				<optgroup label="Option Group 2">
+					<option>Option 4</option>
+					<option>Option 5</option>
+					<option>Option 6</option>
+				</optgroup>
+			</select>
+		</fieldset>
+		<fieldset>
+			<legend>Radio Button Element</legend>
+			<ul>
+				<li>
+					<label for="radio_button1">Radio Button 1</label>
+					<input type="radio" name="radio" id="radio_button1" checked>
+				</li>
+				<li>
+					<label for="radio_button2">Radio Button 2</label>
+					<input type="radio" name="radio" id="radio_button2">
+				</li>
+			</ul>
+		</fieldset>
+		<fieldset>
+			<legend>CheckBox Element</legend>
+			<label for="checkbox_option1">Checkbox 1:</label>
+			<input id ="checkbox_option1" name="checkbox1" type="checkbox" checked>
+
+			<label for="checkbox_option2">Checkbox 2:</label>
+			<input id ="checkbox_option2" name="checkbox2" type="checkbox" >
+
+			<label for="checkbox_option3">Checkbox 3:</label>
+			<input id ="checkbox_option3" name="checkbox3" type="checkbox" >
+		</fieldset>
+		<fieldset>
+			<legend>TextArea Element</legend>
+			<label for="textarea">Textarea:</label><br>
+			<textarea id="textarea" rows="5" cols="50" placeholder="Enter Text here"></textarea>
+		</fieldset>
+		<input type="submit"> &nbsp;&nbsp; <input type="reset">
+	</form>
+	<h2><a href="forms.html" target="_blank">Form Example: Student Information Form</a></h2>
+	<hr>
+	<h2>DIV and SPAN</h2>
+	<div>
+		<h2>DIV 1</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<div>
+		<h2>DIV 2</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<span>
+		<h2>SPAN 1</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.</p>
+	</span>
+	<h2>Whitespaces & HTML Entities</h2>
+	<p>L&nbsp;&nbsp;o&nbsp;&nbsp;r&nbsp;&nbsp;e&nbsp;&nbsp;m ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat.</p>
+	<h2>HTML Entities &#9829;&#9829;&#9829;&#9829;:</h2>
+	<p>&lt;p&gt;This is a shown with HTML Entities&lt;/p&gt;</p>
+    <p>Ampersand: &amp;</p>
+    <p>Dollar: &dollar;</p>
+    <p>Commat: &commat;</p>
+    <p>Copyright: &copy;</p>
+    <p>PI: &Pi;</p>
+    <p>Sum: &sum;</p>
+    <hr>
+    <h2>Progress</h2>
+    <label for="file">Downloading....</label>
+    <progress id="file" value="75" max="100">75%</progress>
+    <hr>
+    <figure>
+      <img src="images/bike.jpg" alt="Bike" style="width: 20%">
+      <figcaption>BIKE</figcaption>
+    </figure>
+    <h2>Details & Summary</h2>
+    <details>
+      <summary>Lorem Ipsam</summary>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </details>
+    <h2>lable, input, datalist</h2>
+    <label for="cityname">Choose your city from the list:</label>
+    <input list="citynames" name="cityname" id="cityname">
+    <datalist id="citynames">
+      <option value="New York">
+      <option value="New Delhi">
+      <option value="Dhaka">
+      <option value="Mumbai">
+      <option value="Atlanta">
+    </datalist>
+    <h2>Header</h2>
+    <header>
+    	<h1>A Heading Text</h1>
+        <p>Posted by Mr. X</p>
+        <p>Additional information.</p>
+    </header>
+    <h2>Nav</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Contact</a>
+      <a href="#">Service</a>
+      <a href="#">About</a>
+    </nav>
+    <h2>Aside</h2>
+    <aside>
+    	<h3>Lorem</h3>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	    consequat.</p>
+    </aside>
+    <h2>Footer</h2>
+    <footer>
+      <p>Quarex © 2021</p>
+    </footer>
+</body>
+</html>
